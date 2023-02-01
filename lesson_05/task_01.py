@@ -1,9 +1,9 @@
 def is_palindrome(word):
-    pal = str(reversed(word))
-    if pal == word:
+    pal = list(reversed(word))
+    if pal == list(word):
         print(True)
     else:
         print(False)
 
 
-is_palindrome('olo')
+is_palindrome('ooo')
