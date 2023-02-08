@@ -2,8 +2,8 @@
 # Напишите программу, спрашивает у пользователя номер задачи, решение которой он хочет проверить,
 # пользователь вводит число от 1 до 5, в зависимости от выбранного номера запросите у пользователя входные данные
 # для задачи (если это нужно) и выведите ответ. Примеры работы программы приведены в комментариях к слайду.
-def hello_world(set_word: str):
-    return set_word
+def hello_world():
+    print('Hello World')
 
 
 def my_sum(numb1: float, numb2: float):
@@ -11,13 +11,13 @@ def my_sum(numb1: float, numb2: float):
 
 
 def simple_compare (numb1: float, numb2: float):
-    if numb1 < numb2:
+    if numb1 < numb2:       # return a < b
         return True
     else:
         return False
 
 
-def compare(numb1: float, numb2: float):
+def compare(numb1: float, numb2: float) -> float:
     if numb1 < numb2:
         return (-1)
     elif numb1 > numb2:
@@ -53,4 +53,7 @@ def main_funcion(numb):
         print('Мы удалили отрицательные числа из вашего списка:',filter_negative_numbers())
     else:
         print('Задачи с таким номером нет.')
-main_funcion(input('Введите номер задачи:'))
+
+
+main_funcion(int(input('Введите номер задачи:')))
+

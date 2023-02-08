@@ -56,3 +56,27 @@ else:
 
 
 # 7. Дано три числа. Вывести количество положительных чисел среди них.
+a = float(input())
+b = float(input())
+c = float(input())
+count = 0
+if a < 0:
+    count += 1
+if b < 0:
+    count += 1
+if c < 0:
+    count += 1
+print(count)
+
+
+# * Даны три числа, выведите максимальное из них (не используя функцию max и не создавая дополнительных переменных
+# и сделав не более 2 сравнений для нахождения результата).
+a = float(input())
+b = float(input())
+c = float(input())
+if a > b:
+    if b
+elif c > b and b > a:
+    print(c)
+else:
+    print(b)

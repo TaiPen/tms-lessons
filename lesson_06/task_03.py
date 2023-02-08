@@ -36,7 +36,7 @@ print(simple_compare(369, 105))
 # compare(100, 200) -> -1
 # compare(200, 100) -> 1
 # compare(10, 10) -> 0
-def compare (numb1: float, numb2: float):
+def compare (numb1: float, numb2: float) -> float:
     if numb1 < numb2:
         return (-1)
     elif numb1 > numb2:
