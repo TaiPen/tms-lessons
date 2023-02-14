@@ -1,3 +1,9 @@
+print('Wats is your name?')
+your_name = input()
+print('Wats is your birth year')
+your_birth_year = int(input())
+your_age = 2023 - your_birth_year
+print('Your age:  ', (your_age))
 def main():
     value = 5
     show_double(value)

@@ -11,9 +11,8 @@ from functools import reduce
 str_letter = input('Введите латинские слова через пробел: ').split()
 sep = input('Введите символ-разделитель: ')
 def my_join():
-    for el in str_letter:
-        return [(el + sep) for el in str_letter]
+    return reduce((lambda a, b: a + sep + b, str_letter))
 
 
 new_letter = my_join()
-print(reduce(lambda a, b: a + b, new_letter))
+print(my_join(str_letter))
