@@ -8,10 +8,11 @@
 # Ввод пользователя: a B c D E f
 # Результат программы: [('A', 'a'), ('B', 'b'), ('C', 'c')]
 
-str_letter = input('Введите латинские буквы через пробел: ')
-def map_to_tuples (str_letter):
-    return str_letter.split()
+str_letter = input('Введите латинские буквы через пробел: ').split()
 
 
-new_str_letter = map_to_tuples(str_letter)
-print(list(map(lambda a: (a.upper(), a.lower()), new_str_letter)))
+def map_to_tuples(str_letter):
+    return list(map(lambda a: (a.upper(), a.lower()), str_letter))
+
+
+print(map_to_tuples(str_letter))

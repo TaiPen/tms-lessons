@@ -2,14 +2,10 @@
 # Вам по прежнему нужно удалить все гласные. При этом вывести результат нужно вывести сохранив изначальный регистр.
 # a m S I o E y H l v O E
 str_letter = input('Введите латинские буквы через пробел: ').split()
-def remove_vowels (str_letter : list):
-    for el in str_letter[::-1]:
-        if el in 'a, e, i, o, u, A, E, I, O, U':
-            str_letter.remove(el)
-    return str_letter
+
+
+def remove_vowels(str_letter : str):
+    return list((filter(lambda el: el.lower() not in 'a, e, i, o, u', str_letter)))
 
 
 print(remove_vowels(str_letter))
-
-# не совсем понял в чем разница с предыдущим заданием ... ведь в предыдущем задании тоже удаляет все гласные,
-# без учета регистра
