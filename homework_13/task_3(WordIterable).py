@@ -4,7 +4,7 @@ class WordIterable:
         self.count = 0
 
     def __iter__(self):
-        self.word = string.split()
+        self.word = self.string.split()
         return self
 
     def __next__(self):
@@ -15,8 +15,8 @@ class WordIterable:
 
 
 if __name__ == '__main__':
-    string = 'один два три четыре пять'
+    string = 'раз два три'
     for i in WordIterable(string):
         print(i)
 
-        assert ['раз', 'два', 'три',] == [i for i in WordIterable('раз два три')]   # не работает :(
+    assert ['раз', 'два', 'три', 'четыре', 'миллион'] == [i for i in WordIterable('раз два три четыре миллион')]
