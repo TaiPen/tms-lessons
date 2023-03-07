@@ -11,4 +11,4 @@ if __name__ == '__main__':
     for i in generate_words(string):
         print(i)
 
-    assert ['раз', 'два', 'три', ] == [i for i in generate_words('один. два! +три*')]   # не работает :(
+    assert ['раз', 'два', 'три', ] == [i for i in generate_words('раз. два! +три*')]   # не работает :(

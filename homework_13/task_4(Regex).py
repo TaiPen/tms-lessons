@@ -4,7 +4,7 @@ import re
 class WordIterable:
     def __init__(self, string):
         # self.normalise()
-        self.string =  string
+        self.string = string
         self.count = 0
 
     # def normalise(self):
@@ -26,4 +26,4 @@ if __name__ == '__main__':
     for i in WordIterable(string):
         print(i)
 
-    assert ['раз', 'два', 'три', ] == [i for i in WordIterable('один. два! +три*')]  # не работает :(
+    assert ['раз', 'два', 'три'] == [i for i in WordIterable('раз?. два! +три*')]  # не работает :(

@@ -30,3 +30,8 @@ any_student = Student('Bruce Wayne', 5.5)
 
 print(any_student.get_scholarship())
 print(any_student.is_excellent())
+
+
+students = [('A', 6), ('G', 9), ('U', 8)]
+
+def

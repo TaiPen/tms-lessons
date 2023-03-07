@@ -15,15 +15,15 @@ my_friends = [Person('Bruce Wayne', 40, 'M'),
               Person('Clark Kent', 27, 'M')]
 
 
-def get_oldest_pearson():
-    winner = 0
+def get_oldest_pearson(my_friends):
+    winner = my_friends[0]
     for el in my_friends:
-        if el.age > winner.age:
-            winner = el.age
+        if el.age > winner:
+            winner = el
     return winner
 
 
-def filter_male_person():
+def filter_male_person(my_friends):
     for el in my_friends:
         return list(filter(lambda person: person.gender == 'M', my_friends))
 
